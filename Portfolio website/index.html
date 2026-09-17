@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Omar Mohamed Ahmed | Web Developer</title>
+  <!-- Linked to your specific CSS file -->
+  <link rel="stylesheet" href="portfolio_website_1.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="container nav-container">
+      <a href="#" class="logo">Omar.dev</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 01 COVER & USP -->
+  <header class="hero section">
+    <div class="container">
+      <div class="hero-badge">Accepting New Clients</div>
+      <h1>I help business owners achieve a fast, reliable, and <span>hacker-proof online presence</span>.</h1>
+      <p>Through a unique combination of custom web building and proactive security testing.</p>
+    </div>
+  </header>
+
+  <!-- 02 ABOUT -->
+  <section id="about" class="section bg-card">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-subtitle">Bridging the gap between design and technical performance.</p>
+      <div class="about-content">
+        <p>Hi, I am Omar Mohamed Ahmed. I build clean, accessible, and highly responsive websites. With a strong foundation in web development and penetration testing, I approach front-end development with a unique focus on writing optimized, secure, and bug-free code. Whether I am manipulating the DOM with pure JavaScript or structuring a complex layout with HTML and CSS, my goal is to deliver a seamless and safe user experience.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 EDUCATION & 04 SKILLS -->
+  <section id="resume" class="section">
+    <div class="container grid-2">
+      <div>
+        <h2 class="section-title" style="text-align: left;">Education & Training</h2>
+        <ul class="resume-list">
+          <li>
+            <strong>Digital Egypt Pioneers Initiative (DEPI)</strong>
+            <p>React Front-End Web Development Track</p>
+          </li>
+          <li>
+            <strong>Code Spark</strong>
+            <p>Penetration Testing</p>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="section-title" style="text-align: left;">Technical Skills</h2>
+        <div class="skills-wrapper">
+          <span class="skill-pill">Semantic HTML5</span>
+          <span class="skill-pill">CSS3 (Flexbox & Grid)</span>
+          <span class="skill-pill">Vanilla JavaScript</span>
+          <span class="skill-pill">DOM Manipulation</span>
+          <span class="skill-pill">Secure Coding Practices</span>
+          <span class="skill-pill">Proactive Security Testing</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 SERVICES -->
+  <section id="services" class="section bg-card">
+    <div class="container">
+      <h2 class="section-title">My Services</h2>
+      <div class="grid-3">
+        <div class="service-card">
+          <h3>Figma to HTML/CSS</h3>
+          <p>Converting your UI designs into pixel-perfect, fully responsive web layouts using modern CSS techniques.</p>
+        </div>
+        <div class="service-card">
+          <h3>Interactive DOM Logic</h3>
+          <p>Bringing static pages to life using vanilla JavaScript events, filtering, and dynamic content rendering.</p>
+        </div>
+        <div class="service-card">
+          <h3>Secure Web Building</h3>
+          <p>Applying penetration testing principles to ensure your front-end code is resilient and reliable.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-subtitle">A collection of my best front-end work.</p>
+      <div class="grid-3">
+         <div class="service-card" style="text-align: left;">
+            <h3>Responsive Landing Page</h3>
+            <p style="margin-bottom: 1rem;">Mobile-first product showcase page built directly from a design spec.</p>
+            <span class="skill-pill">HTML5</span> <span class="skill-pill">CSS Flexbox</span>
+        </div>
+        <div class="service-card" style="text-align: left;">
+            <h3>Interactive Filter App</h3>
+            <p style="margin-bottom: 1rem;">Single-page application demonstrating complex DOM manipulation.</p>
+            <span class="skill-pill">JavaScript</span> <span class="skill-pill">DOM</span>
+        </div>
+        <div class="service-card" style="text-align: left;">
+            <h3>Company Form Validation</h3>
+            <p style="margin-bottom: 1rem;">Interactive contact form with instant client-side validation feedback.</p>
+            <span class="skill-pill">JS Events</span> <span class="skill-pill">CSS Grid</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 CALL TO ACTION & CONTACT -->
+  <section id="contact" class="section bg-card">
+    <div class="container form-container">
+      <h2 class="section-title">Start a Project</h2>
+      <p class="section-subtitle">Fill out the details below to get a custom quote for your website.</p>
+      
+      <form id="loginForm" class="contact-form">
+        <!-- Input Event -->
+        <div class="form-group">
+          <label>1. What is your name?</label>
+          <input type="text" id="search" placeholder="Enter your full name...">
+          <p class="helper-text">Nice to meet you, <span class="inputMsg">...</span>!</p>
+        </div>
+
+        <!-- Change Event -->
+        <div class="form-group">
+          <label>2. What type of project do you need?</label>
+          <select id="countrySelect">
+            <option value="None">Select a project type...</option>
+            <option value="a New Landing Page">New Landing Page</option>
+            <option value="a Figma-to-Code Conversion">Figma to Code</option>
+            <option value="Website Bug Fixes">Website Bug Fixes</option>
+          </select>
+          <p class="helper-text">Great! Let's talk about <span class="changeMsg">your project</span>.</p>
+        </div>
+
+        <!-- Keyup & createElement Event -->
+        <div class="form-group">
+          <label>3. Feature Wishlist (Type a feature and press Enter)</label>
+          <input type="text" id="keyInput" placeholder="Type here and press Enter...">
+          <p class="helper-text"><span class="keyMsg"></span></p>
+          <ul class="list wishlist"></ul>
+        </div>
+
+        <!-- Click Event -->
+        <div class="form-group availability-box">
+          <button type="button" id="clickEvent" class="btn btn-outline">Check My Current Availability</button>
+          <p class="clickMsg helper-text"></p>
+        </div>
+
+        <hr>
+
+        <!-- Submit Event -->
+        <button type="submit" class="btn btn-primary submit-btn">Send Project Details</button>
+        <p class="loginMsg"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Omar Mohamed Ahmed. Professional Web Development.</p>
+    </div>
+  </footer>
+
+  <!-- Linked to your specific JS file -->
+  <script src="portfolio_website_1.js"></script>
+</body>
+</html>
