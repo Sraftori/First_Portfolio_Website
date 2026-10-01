@@ -1,4 +1,3 @@
-// DOM Element Selections for Contact Form
 const searchInput = document.querySelector('#search');
 const inputMsg = document.querySelector('.inputMsg');
 
